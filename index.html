@@ -178,7 +178,7 @@
     <!-- ========================================================================= -->
     <div id="bg-watermark" class="fixed inset-0 pointer-events-none flex items-center justify-center z-0 overflow-hidden transition-opacity duration-300" style="opacity: 0.08;">
         <div class="w-[500px] sm:w-[650px] flex items-center justify-center select-none transform -rotate-3 scale-110">
-            <img id="watermark-img" src="IMG_4093.jpeg" alt="" class="w-full h-auto object-contain rounded-3xl mix-blend-screen hidden" onload="this.classList.remove('hidden'); document.getElementById('watermark-svg').classList.add('hidden');" onerror="this.classList.add('hidden'); document.getElementById('watermark-svg').classList.remove('hidden');">
+            <img id="watermark-img" src="nowe_logo.jpg" alt="" class="w-full h-auto object-contain rounded-3xl mix-blend-screen hidden" onload="this.classList.remove('hidden'); document.getElementById('watermark-svg').classList.add('hidden');" onerror="this.classList.add('hidden'); document.getElementById('watermark-svg').classList.remove('hidden');">
             <svg id="watermark-svg" viewBox="0 0 500 510" class="w-full h-auto">
                 <use href="#wild-builders-exact-shield"></use>
             </svg>
@@ -220,7 +220,7 @@
                 <div class="absolute -inset-1.5 bg-gradient-to-b from-white/30 to-white/5 rounded-3xl blur-md opacity-75 group-hover:opacity-100 transition duration-300"></div>
                 
                 <div class="relative w-40 h-40 sm:w-44 sm:h-44 rounded-2xl bg-white p-2 shadow-2xl border-2 border-white flex items-center justify-center overflow-hidden">
-                    <!-- Primary Logo Image (Loads saved Base64 from localStorage or IMG_4093.jpeg; falls back to SVG replica) -->
+                    <!-- Primary Logo Image (Loads saved Base64 from localStorage or nowe_logo.jpg; falls back to SVG replica) -->
                     <img id="hero-logo-img" src="nowe_logo.jpg" alt="WILD BUILDERS Logo" class="w-full h-full object-contain hidden" onload="this.classList.remove('hidden'); document.getElementById('hero-logo-svg').classList.add('hidden');" onerror="this.classList.add('hidden'); document.getElementById('hero-logo-svg').classList.remove('hidden');">
                     
                     <svg id="hero-logo-svg" viewBox="0 0 500 510" class="w-full h-full">
@@ -523,7 +523,7 @@
             <div class="mt-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/15">
                 <div class="flex items-center justify-between mb-1">
                     <label class="block text-xs font-bold uppercase tracking-wider text-white">
-                        1. Wgraj swój plik logo (IMG_4093.jpeg) na stałe
+                        1. Wgraj swój plik logo (nowe_logo.jpg) na stałe
                     </label>
                     <span id="logo-saved-badge" class="hidden text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
                         Zapisano w pamięci ✓
@@ -787,7 +787,7 @@
             showToast(`Wczytano wariant opisu nr ${presetNum}!`);
         }
 
-        // Compress & convert uploaded IMG_4093.jpeg to Base64 so it fits in localStorage and stays forever
+        // Compress & convert uploaded nowe_logo.jpg to Base64 so it fits in localStorage and stays forever
         function handleLogoUpload(event) {
             const file = event.target.files[0];
             if (!file) return;
